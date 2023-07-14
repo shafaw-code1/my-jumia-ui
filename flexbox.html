@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+.left,
+.right {
+  width: 100px;
+  height: 500px;
+  background-color: red;
+  border: 1px solid black;
+  padding-bottom: 100%;
+}
+
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.center {
+  width: 500px;
+  height: 30px;
+  background-color: blue;
+  border: 1px solid black;
+  margin: 10px;
+  color: whitesmoke;
+  text-align: center;
+}
+</style>
+
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="center-wrapper">
+      <div class="center"></div>
+      <div class="center"></div>
+      <div class="center"></div>
+      <div class="center"></div>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+      <DIV class="center"></DIV>
+  
+    </div>
+    <div class="right"></div>
+  </div>
+</body>
+
+<script>
+  // Get all the center divs
+const centerDivs = document.querySelectorAll('.center');
+
+// Loop through each center div
+for (let i = 0; i < centerDivs.length; i++) {
+  const x = i + 1; // Calculate the value of x (1 to 10)
+
+  // Calculate the value of the expression 2x^2-5
+  const result = 2 * Math.pow(x, 2) - 5;
+
+  // Insert the value into the center div
+  centerDivs[i].textContent = result;
+}
+
+</script>
+</html>
